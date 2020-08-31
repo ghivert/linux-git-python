@@ -1,3 +1,10 @@
+# Exercices en Python
+
+Pour se familiariser ou se re-familiariser avec Python avant d’attaquer les projets du bootcamp !
+Chaque exercice est indépendant, et cela peut être fait dans l’ordre de votre choix !
+
+---
+
 1. Définissez une fonction `max()` qui prend deux nombres comme arguments et renvoie le plus grand d'entre eux. Utilisez la construction if-then-else disponible en Python. (Il est vrai que Python a la fonction `max()` intégrée, mais l'écrire soi-même est néanmoins un bon exercice).
 
 2. Définissez une fonction `max_of_three()` qui prend trois nombres comme arguments et renvoie le plus grand d'entre eux.
