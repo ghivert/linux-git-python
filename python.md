@@ -29,11 +29,11 @@ Chaque exercice est indépendant, et cela peut être fait dans l’ordre de votr
 
 12. Définissez une procédure `histogram()` qui prend une liste d'entiers et imprime un histogramme à l'écran. Par exemple, `histogram( [ 4, 9, 7 ] )` devrait imprimer ce qui suit :
 
-```
-****
-*********
-*******
-```
+    ```
+    ****
+    *********
+    *******
+    ```
 
 13. La fonction `max()` de l'exercice 1) et la fonction `max_of_three()` de l'exercice 2) ne fonctionneront que pour deux et trois nombres, respectivement. Mais supposons que nous ayons un nombre beaucoup plus important de nombres, ou supposons que nous ne puissions pas dire à l'avance combien ils sont… Écrivez une fonction `max_in_list()` qui prend une liste de nombres et renvoie le plus grand.
 
@@ -55,9 +55,9 @@ Chaque exercice est indépendant, et cela peut être fait dans l’ordre de votr
 
 20. Représenter un petit lexique bilingue comme un dictionnaire Python de la manière suivante :
 
-`{"merry" : "god", "christmas" : "jul", "and" : "och", "happy":gott", "new" : "nytt", "year" : "år" }`
+    `{"merry" : "god", "christmas" : "jul", "and" : "och", "happy":gott", "new" : "nytt", "year" : "år" }`
 
-Et utilisez le pour traduire vos cartes de Noël de l'anglais au suédois. C'est-à-dire, écrivez une fonction `translate()` qui prend une liste de mots anglais et renvoie une liste de mots suédois.
+    Et utilisez le pour traduire vos cartes de Noël de l'anglais au suédois. C'est-à-dire, écrivez une fonction `translate()` qui prend une liste de mots anglais et renvoie une liste de mots suédois.
 
 21. Écrivez une fonction `char_freq()` qui prend une chaîne de caractères et construit une liste de fréquence des caractères qu'elle contient. Représentez la liste de fréquence comme un dictionnaire Python. Essayez-le avec quelque chose comme :
 
@@ -65,13 +65,13 @@ Et utilisez le pour traduire vos cartes de Noël de l'anglais au suédois. C'est
 
 22. En cryptographie, le chiffrement de César est une technique de cryptage très simple dans laquelle chaque lettre du texte en clair est remplacée par une lettre à un nombre fixe de positions dans l'alphabet. Par exemple, avec un décalage de 3, A serait remplacé par D, B deviendrait E, et ainsi de suite. Cette méthode porte le nom de Jules César, qui l'utilisait pour communiquer avec ses généraux. ROT-13 ("rotation de 13 places") est un exemple largement utilisé de chiffre de César où le décalage est de 13. En Python, la clé pour ROT-13 peut être représentée au moyen du dictionnaire suivant :
 
-```
-key = {'a':'n', 'b':'o', 'c':'p', 'd':'q', 'e':'r', 'f':'s', 'g':'t', 'h':'u', 'i':'v', 'j':'w', 'k':'x', 'l':'y', 'm':'z', 'n':'a', 'o':'b', 'p':'c', 'q':'d', 'r':'e', 's':'f', 't':'g', 'u':'h', 'v':'i', 'w':'j', 'x':'k', 'y':'l', 'z':'m', 'A':'N', 'B':'O', 'C':'P', 'D':'Q', 'E':'R', 'F':'S', 'G':'T', 'H':'U', 'I':'V', 'J':'W', 'K':'X', 'L':'Y', 'M':'Z', 'N':'A', 'O':'B', 'P':'C', 'Q':'D', 'R':'E', 'S':'F', 'T':'G', 'U':'H', 'V':'I', 'W':'J', 'X':'K', 'Y':'L', 'Z':'M'}
-```
+    ```
+    key = {'a':'n', 'b':'o', 'c':'p', 'd':'q', 'e':'r', 'f':'s', 'g':'t', 'h':'u', 'i':'v', 'j':'w', 'k':'x', 'l':'y', 'm':'z', 'n':'a', 'o':'b', 'p':'c', 'q':'d', 'r':'e', 's':'f', 't':'g', 'u':'h', 'v':'i', 'w':'j', 'x':'k', 'y':'l', 'z':'m', 'A':'N', 'B':'O', 'C':'P', 'D':'Q', 'E':'R', 'F':'S', 'G':'T', 'H':'U', 'I':'V', 'J':'W', 'K':'X', 'L':'Y', 'M':'Z', 'N':'A', 'O':'B', 'P':'C', 'Q':'D', 'R':'E', 'S':'F', 'T':'G', 'U':'H', 'V':'I', 'W':'J', 'X':'K', 'Y':'L', 'Z':'M'}
+    ```
 
-Votre tâche dans cet exercice est de mettre en œuvre un encodeur/décodeur de ROT-13. Une fois que vous aurez terminé, vous serez en mesure de lire le message secret suivant :
-`Pnrfne pvcure? V zhpu cersre Pnrfne fnynq!`
-Notez que puisque l'anglais compte 26 caractères, votre programme ROT-13 pourra à la fois encoder et décoder les textes écrits en anglais.
+    Votre tâche dans cet exercice est de mettre en œuvre un encodeur/décodeur de ROT-13. Une fois que vous aurez terminé, vous serez en mesure de lire le message secret suivant :
+    `Pnrfne pvcure? V zhpu cersre Pnrfne fnynq!`
+    Notez que puisque l'anglais compte 26 caractères, votre programme ROT-13 pourra à la fois encoder et décoder les textes écrits en anglais.
 
 23. Définissez une fonction simple de "correction orthographique" `correct()` qui prend une chaîne de caractères et veille à ce que 1) deux ou plusieurs occurrences du caractère espace soient compressées en une, et 2) insère un espace supplémentaire après un point si celui-ci est directement suivi d'une lettre. Par exemple, `correct("This is very funny and cool.Indeed!")` devrait retourner : "This is very funny and cool. Indeed!". Conseil : Utilisez des expressions régulières !
 
