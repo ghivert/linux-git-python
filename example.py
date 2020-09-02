@@ -9,14 +9,14 @@ def reader():
     print(current_working_directory)
     print(files)
 
+# Lire un fichier
 file = open('./example.py')
+print(file.read())
 
 reader()
 os.chdir('/bin')
 reader()
 
-# Lire un fichier
-print(file.read())
 
 # Interagir avec le monde extérieur (HTTP)
 results = requests.get('https://google.com')
