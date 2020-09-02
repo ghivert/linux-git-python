@@ -9,12 +9,13 @@ def reader():
     print(current_working_directory)
     print(files)
 
+file = open('./example.py')
+
 reader()
 os.chdir('/bin')
 reader()
 
 # Lire un fichier
-file = open('./test.py')
 print(file.read())
 
 # Interagir avec le monde extérieur (HTTP)
